@@ -404,7 +404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf450088c53a23146a0e947853bb5a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCharacterGravity: 0
-  mainCharacterJumpHeight: 100
+  mainCharacterGravity: 10
+  mainCharacterJumpHeight: 40
   terrainSlideLeftSpeed: 40
-  terrainSpawnRate: 2
+  terrainSpawnRate: 1.2

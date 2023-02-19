@@ -25,11 +25,9 @@ public class TerrainSpawnerScript : MonoBehaviour
         float timer = mainScript.GetTimer();
         float spawnRate = mainScript.GetTerrainSpawnRate();
         float adjustedTimer = timer / spawnIteration;
-        Debug.Log($"Timer: {timer}, Spawn Rate: {spawnRate}, Adjusted Timer: {adjustedTimer}, Iteration: {spawnIteration}");
 
         if (adjustedTimer >= spawnRate)
         {
-            Debug.Log($"INSIDEEEEE");
             spawnIteration++;
             GameObject newTerrain = Instantiate(terrain, transform.position, transform.rotation);
             newTerrain.GetComponent<TerrainScript>().InitializeMainScript(mainScript);

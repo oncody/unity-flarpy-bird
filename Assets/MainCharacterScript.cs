@@ -21,7 +21,7 @@ public class MainCharacterScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            rigidBody.velocity = Vector2.up * mainScript.GetMainCharacterJumpHeight();
+            rigidBody.velocity = Vector2.up * (mainScript.GetMainCharacterJumpHeight() + mainScript.GetMainCharacterGravity());
         }
     }
 }

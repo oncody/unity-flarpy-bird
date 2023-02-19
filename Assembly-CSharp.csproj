@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5A27E722-A1F6-66B4-4BFB-40C9DC4F3F53}</ProjectGuid>
+    <ProjectGuid>{CF1CEF66-8395-2997-A09F-FDF720129CBB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,10 +56,10 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\MainCharacterScript.cs" />
-    <Compile Include="Assets\TerrainScript.cs" />
-    <Compile Include="Assets\MainScript.cs" />
     <Compile Include="Assets\TerrainSpawnerScript.cs" />
+    <Compile Include="Assets\MainScript.cs" />
+    <Compile Include="Assets\TerrainScript.cs" />
+    <Compile Include="Assets\MainCharacterScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

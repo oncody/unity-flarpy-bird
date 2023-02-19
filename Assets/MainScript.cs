@@ -30,7 +30,6 @@ public class MainScript : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        Debug.Log($"Timer: {timer}");
     }
 
     public float GetMainCharacterGravity()
