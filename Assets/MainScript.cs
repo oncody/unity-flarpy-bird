@@ -19,6 +19,9 @@ public class MainScript : MonoBehaviour
     [SerializeField]
     private float terrainSpawnRate;
 
+    [SerializeField]
+    private float terrainSpawnHeightOffset;
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +33,11 @@ public class MainScript : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
+    }
+
+    public float GetTimer()
+    {
+        return timer;
     }
 
     public float GetMainCharacterGravity()
@@ -51,8 +59,8 @@ public class MainScript : MonoBehaviour
         return terrainSpawnRate;
     }
 
-    public float GetTimer()
+    public float GetTerrainSpawnHeightOffset()
     {
-        return timer;
+        return terrainSpawnHeightOffset;
     }
 }

@@ -408,3 +408,4 @@ MonoBehaviour:
   mainCharacterJumpHeight: 40
   terrainSlideLeftSpeed: 40
   terrainSpawnRate: 1.2
+  terrainSpawnHeightOffset: 10

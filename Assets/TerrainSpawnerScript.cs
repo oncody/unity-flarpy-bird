@@ -16,7 +16,7 @@ public class TerrainSpawnerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        SpawnTerrain();
     }
 
     // Update is called once per frame
@@ -29,8 +29,16 @@ public class TerrainSpawnerScript : MonoBehaviour
         if (adjustedTimer >= spawnRate)
         {
             spawnIteration++;
-            GameObject newTerrain = Instantiate(terrain, transform.position, transform.rotation);
-            newTerrain.GetComponent<TerrainScript>().InitializeMainScript(mainScript);
+            SpawnTerrain();
         }
+    }
+
+    private void SpawnTerrain()
+    {
+        float highestPoint = transform.position.y + mainScript.GetTerrainSpawnHeightOffset();
+        float lowestPoint = transform.position.y - mainScript.GetTerrainSpawnHeightOffset();
+
+        GameObject newTerrain = Instantiate(terrain, new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 0), transform.rotation);
+        newTerrain.GetComponent<TerrainScript>().InitializeMainScript(mainScript);
     }
 }
