@@ -16,6 +16,11 @@ public class TerrainScript : MonoBehaviour
     void Update()
     {
         transform.position += Vector3.left * mainScript.GetTerrainSlideLeftSpeed() * Time.deltaTime;
+
+        if(transform.position.x < mainScript.GetDeadZone())
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void InitializeMainScript(MainScript mainScript)

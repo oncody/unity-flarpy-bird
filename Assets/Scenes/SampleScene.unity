@@ -409,3 +409,4 @@ MonoBehaviour:
   terrainSlideLeftSpeed: 40
   terrainSpawnRate: 1.2
   terrainSpawnHeightOffset: 10
+  deadZone: -90

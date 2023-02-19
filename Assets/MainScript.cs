@@ -22,6 +22,9 @@ public class MainScript : MonoBehaviour
     [SerializeField]
     private float terrainSpawnHeightOffset;
 
+    [SerializeField]
+    private float deadZone;
+
 
     // Start is called before the first frame update
     void Start()
@@ -62,5 +65,10 @@ public class MainScript : MonoBehaviour
     public float GetTerrainSpawnHeightOffset()
     {
         return terrainSpawnHeightOffset;
+    }
+
+    public float GetDeadZone()
+    {
+        return deadZone;
     }
 }
