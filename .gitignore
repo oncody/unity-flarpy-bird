@@ -1,0 +1,7 @@
+Library
+Packages/packages-lock.json
+obj/Debug
+Logs
+.vs
+ProjectSettings
+UserSettings
